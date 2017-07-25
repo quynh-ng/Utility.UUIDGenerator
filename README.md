@@ -1,0 +1,3 @@
+After installing Visual Studio 2017, the tool named "Create GUID" was got error and can't resolve.
+
+This tiny tool is a replacement when waiting for MSFT...
