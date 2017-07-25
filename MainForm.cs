@@ -18,9 +18,8 @@ namespace net.vieapps.Utility.UUIDGenerator
 
 		void DoGenerate()
 		{
-			this.UUID.Text = this.UpperCase.Checked
-				? Guid.NewGuid().ToString("N").ToUpper()
-				: Guid.NewGuid().ToString("N").ToLower();
+			var uuid = Guid.NewGuid().ToString(this.WithHyphens.Checked ? "D" : "N");
+			this.UUID.Text = this.UpperCase.Checked ? uuid.ToUpper() : uuid.ToLower();
 		}
 	}
 }

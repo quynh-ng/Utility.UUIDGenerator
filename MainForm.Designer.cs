@@ -31,6 +31,7 @@
 			this.UUID = new System.Windows.Forms.TextBox();
 			this.Generate = new System.Windows.Forms.Button();
 			this.UpperCase = new System.Windows.Forms.CheckBox();
+			this.WithHyphens = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// UUID
@@ -61,11 +62,22 @@
 			this.UpperCase.Text = "Upper case";
 			this.UpperCase.UseVisualStyleBackColor = true;
 			// 
+			// WithHyphens
+			// 
+			this.WithHyphens.AutoSize = true;
+			this.WithHyphens.Location = new System.Drawing.Point(229, 84);
+			this.WithHyphens.Name = "WithHyphens";
+			this.WithHyphens.Size = new System.Drawing.Size(175, 29);
+			this.WithHyphens.TabIndex = 3;
+			this.WithHyphens.Text = "With hyphens";
+			this.WithHyphens.UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(990, 138);
+			this.Controls.Add(this.WithHyphens);
 			this.Controls.Add(this.UpperCase);
 			this.Controls.Add(this.Generate);
 			this.Controls.Add(this.UUID);
@@ -85,6 +97,7 @@
 		private System.Windows.Forms.TextBox UUID;
 		private System.Windows.Forms.Button Generate;
 		private System.Windows.Forms.CheckBox UpperCase;
+		private System.Windows.Forms.CheckBox WithHyphens;
 	}
 }
 
